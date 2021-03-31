@@ -15,3 +15,4 @@ The project doesn't store the values but only generates them and allows you to c
 - Input the color you want colors that go well with it generated
 - Click on either of the four buttons depending on which method you want colors generated
 - Copy paste the HSL values 
+(The site)[https://colgen.netlify.app/]
