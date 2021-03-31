@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2B2C;
+    color: rgb(255, 255, 169);
+    height: fit-content;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+   
+}
+h1{
+    font-size: 4rem;
+    font-family: 'Dela Gothic One', cursive;
+    position: absolute;
+    top: 100px;
+}
+a{
+    color: rgb(255, 255, 169);
+    font-size: 1.3rem;
+}
+.buttons{
+    display: flex;
+    margin: 20px 0;
+
+}
+section{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    place-content: end;
+    place-items: center;
+        height: 350px;
+    width: 100vw;
+    
+
+}
+section>div{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 169);
+    margin-left: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 10px;
+}
+.form{
+    width: 250px;
+    height: 50px;
+    background: none;
+    border: 2px solid rgb(255, 255, 169);
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 169);
+    border-radius: 30px;
+    margin: 0 10px;
+}
+#color{
+    width: 300px;
+    height: 50px;
+    border: 3px solid rgb(255, 255, 169);
+    outline: none;
+}
+.hsll{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    background: #2B2B2C;
+    border: 1px solid rgb(255, 255, 169);
+    transform: translateY(-20px);
+    color: rgb(255, 255, 169);
+    padding-left: 10px;
+}
+
+@media(min-width:768px) and (max-width:1420px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2B2B2C;
+        color: rgb(255, 255, 169);
+        height: 150vh;
+        font-family: 'Roboto', sans-serif;
+    
+       
+    }
+    h1{
+        font-size: 4rem;
+        font-family: 'Dela Gothic One', cursive;
+        position: relative;
+        top: 0;
+    }
+    section{
+        height:400px;
+        overflow: visible;
+    }
+    .form{
+        overflow: visible;
+
+    }
+}
+@media(max-width:768px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2rem;
+        font-family: 'Dela Gothic One', cursive;
+        position: relative;
+        top: 0;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    
+    }
+    .form{
+        margin-top: 10px;
+    }
+}
